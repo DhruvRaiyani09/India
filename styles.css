@@ -66,10 +66,16 @@ video{
 	transform: scale(1.1);
 }
 
-
-
 footer a:hover {
 	background: linear-gradient(#FF9933,#138808);
 	color: black;
 	transform: scale(1.1);
 }
+
+@media only screen and (max-width: 900px)
+{
+	body{
+		background-image: url(mbg.jpeg);
+	}
+}
+	
