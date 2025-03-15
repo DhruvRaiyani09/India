@@ -50,90 +50,77 @@ body{
 </div>
        
 <font style="font-size: 35px;"><b>Contact Us:</b></font><br><br>
-<font style="font-size: 25px;">Please fill out the form below for any inquiries or to register as a student.</font><br><br>
-<br>
-<center>
-<div class="img-fluid rounded"style="border: 7px groove black; width: 800px; height: 670px; background: #FFFFFF; ">
-<center><br> 	
-<font style="padding-left: px; font-size: 30px;"><b>Student Registration Form</b></font><hr>
-<table style="font-size: 18px;">
-<form>
+<font style="font-size: 25px;">Please fill out the form below for any inquiries or to register as a student.</font><br>
 
-<tr>
-	<td>First name:</td>
-	<td>&nbsp;&nbsp;&nbsp;</td>
-	<td><input type="name" placeholder="Enter your First name" required></td>
-</tr>
-<tr></tr><tr></tr><tr></tr>
-<tr>
-	<td>Password:</td>
-	<td>&nbsp;&nbsp;&nbsp;</td>
-	<td><input type="password" placeholder="Enter your Password" required></td>
-</tr>
-<tr></tr><tr></tr><tr></tr>
-<tr>
-	<td>Gender:</td>
-	<td>&nbsp;&nbsp;&nbsp;</td>
-	<td><input type="radio" name="g">Male <input type="radio" name="g">Female </td>
-</tr>
-<tr></tr><tr></tr><tr></tr>
-<tr>
-	<td>Subscription:</td>
-	<td>&nbsp;&nbsp;&nbsp;</td>
-	<td><input type="checkbox"></td>
-</tr>
-<tr></tr><tr></tr><tr></tr>
-<tr>
-	<td>State:</td>
-	<td>&nbsp;&nbsp;&nbsp;</td>
-	<td><select>
-		<option> Select your state</option> 
-		<option> Gujarat</option> 
-		<option> Rajasthan</option> 
-		<option> Maharastra</option> </td>
-</tr>
-<tr></tr><tr></tr><tr></tr>
-<tr>
-	<td>Upload Resume:</td>
-	<td>&nbsp;&nbsp;&nbsp;</td>
-	<td><input type="file" required></td>
-</tr>
-<tr></tr><tr></tr><tr></tr>
-<tr>
-	<td valign="top">Address:</td>
-	<td></td>
-	<td><textarea rows=5 cols=35 placeholder="Enter your full address" required></textarea></td>
-</tr>
-<tr></tr><tr></tr><tr></tr>
-
-<tr>
-	<td>Date of birth:</td>
-	<td>&nbsp;&nbsp;&nbsp;</td>
-	<td><input type="date" required></td>
-</tr>
-<tr></tr><tr></tr><tr></tr>
-
-<tr>
-	<td>Interview Time:</td>
-	<td>&nbsp;&nbsp;&nbsp;</td>
-	<td><input type="time" required></td>
-</tr>
-<tr></tr><tr></tr><tr></tr>
-
-<tr>
-	<td>Marks:</td>
-	<td>&nbsp;&nbsp;&nbsp;</td>
-	<td><input type="number" max=100 min=60 required></td>
-</tr>
-
-<tr></tr><tr></tr><tr></tr>
-
-<tr>
-	<td colspan=4 align="center"><input type="submit" style="margin-left: 45px;"> <input type="reset" style="margin-top: 15px; margin-right:85px;"></td>
-</tr>
-</center>
-</form>
-</table>
+<div class="container mt-4">
+<div style="border: 3px solid; background:   #F0F0F0;">
+        <h2 class="text-center mb-4">Student Registration Form</h2>
+        <form class="row g-3">
+            <!-- First Name -->
+            <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter your First name" required>
+            </div>
+            <!-- Password -->
+            <div class="col-md-6">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your Password" required>
+            </div>
+            <!-- Gender -->
+            <div class="col-md-12">
+                <label class="form-label">Gender</label>
+                <div>
+                    <input type="radio" name="gender" id="male" value="Male" required> Male
+                    <input type="radio" name="gender" id="female" value="Female"> Female
+                </div>
+            </div>
+            <!-- Subscription -->
+            <div class="col-md-12">
+                <label for="subscription" class="form-label">Subscription</label>
+                <input type="checkbox" id="subscription">
+            </div>
+            <!-- State -->
+            <div class="col-md-6">
+                <label for="state" class="form-label">State</label>
+                <select class="form-select" id="state" required>
+                    <option value="" disabled selected>Select your state</option>
+                    <option>Gujarat</option>
+                    <option>Rajasthan</option>
+                    <option>Maharashtra</option>
+                </select>
+            </div>
+            <!-- Resume -->
+            <div class="col-md-6">
+                <label for="resume" class="form-label">Upload Resume</label>
+                <input type="file" class="form-control" id="resume" required>
+            </div>
+            <!-- Address -->
+            <div class="col-md-12">
+                <label for="address" class="form-label">Address</label>
+                <textarea class="form-control" id="address" rows="4" placeholder="Enter your full address" required></textarea>
+            </div>
+            <!-- Date of Birth -->
+            <div class="col-md-6">
+                <label for="dob" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" required>
+            </div>
+            <!-- Interview Time -->
+            <div class="col-md-6">
+                <label for="time" class="form-label">Interview Time</label>
+                <input type="time" class="form-control" id="time" required>
+            </div>
+            <!-- Marks -->
+            <div class="col-md-6">
+                <label for="marks" class="form-label">Marks</label>
+                <input type="number" class="form-control" id="marks" min="60" max="100" required>
+            </div>
+            <!-- Buttons -->
+            <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+        </form>
+    </div>
 </div>
 </center><br>
 <font style="font-size: 35px;">&nbsp;<b>More Information:</b></font><br><br>
