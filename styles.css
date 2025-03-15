@@ -72,10 +72,16 @@ footer a:hover {
 	transform: scale(1.1);
 }
 
-@media only screen and (max-width: 1024px)
+@media only screen and (max-width: 1440px)
 {
 	body{
 		background-image: url(mbg.jpeg);
 	}
+	.nav a:hover {
+	background: linear-gradient(orange,green);
+	color: black;
+	transform: scale(1.1);
+}
+
 }
 	
