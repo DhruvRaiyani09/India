@@ -56,17 +56,14 @@ body{
 <div style="border: 3px solid; background: #F0F0F0; padding: 9px;">
         <h2 class="text-center mb-4">Student Registration Form</h2>
         <form class="row g-3">
-            <!-- First Name -->
             <div class="col-md-6">
                 <label for="firstName" class="form-label">First Name</label>
                 <input type="text" class="form-control" id="firstName" placeholder="Enter your First name" required>
             </div>
-            <!-- Password -->
             <div class="col-md-6">
                 <label for="password" class="form-label">Password</label>
                 <input type="password" class="form-control" id="password" placeholder="Enter your Password" required>
             </div>
-            <!-- Gender -->
             <div class="col-md-12">
                 <label class="form-label">Gender</label>
                 <div>
@@ -74,12 +71,10 @@ body{
                     <input type="radio" name="gender" id="female" value="Female"> Female
                 </div>
             </div>
-            <!-- Subscription -->
             <div class="col-md-12">
                 <label for="subscription" class="form-label">Subscription</label>
                 <input type="checkbox" id="subscription">
             </div>
-            <!-- State -->
             <div class="col-md-6">
                 <label for="state" class="form-label">State</label>
                 <select class="form-select" id="state" required>
@@ -89,32 +84,26 @@ body{
                     <option>Maharashtra</option>
                 </select>
             </div>
-            <!-- Resume -->
             <div class="col-md-6">
                 <label for="resume" class="form-label">Upload Resume</label>
                 <input type="file" class="form-control" id="resume" required>
             </div>
-            <!-- Address -->
             <div class="col-md-12">
                 <label for="address" class="form-label">Address</label>
                 <textarea class="form-control" id="address" rows="4" placeholder="Enter your full address" required></textarea>
             </div>
-            <!-- Date of Birth -->
             <div class="col-md-6">
                 <label for="dob" class="form-label">Date of Birth</label>
                 <input type="date" class="form-control" id="dob" required>
             </div>
-            <!-- Interview Time -->
             <div class="col-md-6">
                 <label for="time" class="form-label">Interview Time</label>
                 <input type="time" class="form-control" id="time" required>
             </div>
-            <!-- Marks -->
             <div class="col-md-6">
                 <label for="marks" class="form-label">Marks</label>
                 <input type="number" class="form-control" id="marks" min="60" max="100" required>
             </div>
-            <!-- Buttons -->
             <div class="col-md-12 text-center">
                 <button type="submit" class="btn btn-primary">Submit</button>
                 <button type="reset" class="btn btn-secondary">Reset</button>
