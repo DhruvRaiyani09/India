@@ -71,6 +71,14 @@ footer a:hover {
 	color: black;
 	transform: scale(1.1);
 }
+.nav{
+	animation-name: na;
+	animation-duration: 3s;
+}
+@keyframes na{
+	from{margin-left: -2900px;}
+	to{margin-left: -10;}	
+}
 
 @media only screen and (max-width: 1440px)
 {
